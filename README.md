@@ -47,3 +47,14 @@ dotnet build
 ```bash
 dotnet run
 ```
+
+## Настройка подключения к базе данных
+
+В файле `ContactsContext.cs` найдите метод `OnConfiguring` и укажите свои данные подключения к PostgreSQL:
+
+```csharp
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+    // Замените параметры на свои
+    optionsBuilder.UseNpgsql("Host=localhost;Database=contactsdb;Username=ваш_пользователь;Password=ваш_пароль");
+}

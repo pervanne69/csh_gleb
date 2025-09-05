@@ -21,6 +21,6 @@ public class ContactsContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         // Подставь свои данные подключения
-        optionsBuilder.UseNpgsql("Host=localhost;Database=contactsdb;Username=samvel;Password=alahakbar");
+        optionsBuilder.UseNpgsql("Host=localhost;Database=contactsdb;Username=ваш_пользователь;Password=ваш_пароль");
     }
 }
