@@ -29,11 +29,21 @@
 1. Установите PostgreSQL.
 2. Откройте **pgAdmin 4**.
 
-Установить пакеты EF Core и Npgsql:
+## Установка зависимостей и запуск
+
+1. Установите пакеты EF Core и PostgreSQL-провайдера:
+
+```bash
 dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 dotnet tool install --global dotnet-ef
-
+```
+2. Собрать пакеты
+```bash
 dotnet build
+```
+3. Запустить программу
+```bash
 dotnet run
+```
